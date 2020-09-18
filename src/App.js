@@ -6,9 +6,9 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import Booking from './components/Booking/Booking';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Header from './components/Header/Header';
-import Destination from './components/Destination/Destination';
 function App() {
   return (
     <div >
@@ -22,7 +22,7 @@ function App() {
           <Home />
          </Route>
          <Route path="/detail/:numId">
-         <Destination></Destination>
+         <Booking />
          </Route>
          <Route path="*">
            <PageNotFound />

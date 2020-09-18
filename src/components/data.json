@@ -1,0 +1,22 @@
+[{
+    "id": 1,
+    "title": "Cox’s Bazar",
+    "detail": "Cox’s Bazar is a town on the southeast coast of Bangladesh. It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. South of town, the tropical rainforest of Himchari National Park has waterfalls and many birds. North, sea turtles breed on nearby Sonadia Island.",
+    "img": "./images/travel-guru-master/Image/rectangle 1.png",
+    "origin": "Seiurus aurocapillus",
+    "destination": "Phoenicopterus ruber"
+  }, {
+    "id": 2,
+    "title": "Stanwood",
+    "detail": "Wohler",
+    "img": "Centrocercus urophasianus",
+    "origin": "Echimys chrysurus",
+    "destination": "Nucifraga columbiana"
+  }, {
+    "id": 3,
+    "title": "Pierrette",
+    "detail": "Gagan",
+    "img": "Bubalus arnee",
+    "origin": "Cereopsis novaehollandiae",
+    "destination": "Merops nubicus"
+  }]
