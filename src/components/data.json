@@ -1,22 +1,28 @@
 [{
-    "id": 1,
-    "title": "Cox’s Bazar",
-    "detail": "Cox’s Bazar is a town on the southeast coast of Bangladesh. It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. South of town, the tropical rainforest of Himchari National Park has waterfalls and many birds. North, sea turtles breed on nearby Sonadia Island.",
-    "img": "./images/travel-guru-master/Image/rectangle 1.png",
-    "origin": "Seiurus aurocapillus",
-    "destination": "Phoenicopterus ruber"
-  }, {
-    "id": 2,
-    "title": "Stanwood",
-    "detail": "Wohler",
-    "img": "Centrocercus urophasianus",
-    "origin": "Echimys chrysurus",
-    "destination": "Nucifraga columbiana"
-  }, {
-    "id": 3,
-    "title": "Pierrette",
-    "detail": "Gagan",
-    "img": "Bubalus arnee",
-    "origin": "Cereopsis novaehollandiae",
-    "destination": "Merops nubicus"
-  }]
+  "id": 1,
+  "start": "19/23",
+  "and": "26/23",
+  "title": "COX’S BAZAR",
+  "detail": "Cox’s Bazar is a town on the southeast coast of Bangladesh. It’s known for its very long, sandy beachfront, stretching from Sea Beach in the north to Kolatoli Beach in the south. Aggameda Khyang monastery is home to bronze statues and centuries-old Buddhist manuscripts. South of town, the tropical rainforest of Himchari National Park has waterfalls and many birds. North, sea turtles breed on nearby Sonadia Island.",
+  "img": "https://i.ibb.co/DbXRmV8/Rectangle-1.png",
+  "origin": "Seiurus aurocapillus",
+  "destination": "Cox’s Bazar"
+}, {
+  "id": 2,
+  "start": "15/20",
+  "and": "25/20",
+  "title": "SREEMANGAL",
+  "detail": "Sreemangal is located at 24.3083°N 91.7333°E. It has 43,952 households and total area 450.74 km². It is bordered by Moulvibazar Sadar to the north, Tripura to the south, Kamalganj to the east and Chunarughat, Nabiganj and Bahubal to the west.",
+  "img": "https://i.ibb.co/JdJC0CN/Sreemongol.png",
+  "origin": "Echimys chrysurus",
+  "destination": "Sreemangal"
+}, {
+  "id": 3,
+  "start": "06/08",
+  "and": "13/08",
+  "title": "SUNDARBAN",
+  "detail": "The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh",
+  "img": "https://i.ibb.co/YfsnQL2/sundorbon.png",
+  "origin": "Dakha",
+  "destination": "Sundarban"
+}]

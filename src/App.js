@@ -9,6 +9,8 @@ import Home from './components/Home/Home';
 import Booking from './components/Booking/Booking';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Header from './components/Header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Room from './components/Room/Room';
 function App() {
   return (
     <div >
@@ -21,8 +23,11 @@ function App() {
           <Route exact path="/">
           <Home />
          </Route>
-         <Route path="/detail/:numId">
+         <Route path="/detail/:numId/">
          <Booking />
+         </Route>
+         <Route to="/roomBtn">
+          <Room />
          </Route>
          <Route path="*">
            <PageNotFound />

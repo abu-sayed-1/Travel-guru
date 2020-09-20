@@ -1,0 +1,30 @@
+ 
+
+/* .blog{ */
+
+/* } */
+
+.title {
+  
+     font-size: 35px;
+    color: #f9fcff;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    max-height: 180px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.start_booking{
+    height: 300px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.bookingBtn{
+    background-color: tomato;
+}

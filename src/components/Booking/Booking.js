@@ -1,21 +1,42 @@
 import React from 'react';
-import Login from '../Login/Login';
-// import { useParams } from 'react-router-dom';
-// import fakeData from '../data.json'
-
+import { Link, useHistory, useParams } from 'react-router-dom';
+import fakeData from '../data.json'
+import './Booking.css'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import { Button } from '@material-ui/core';
+ 
 const Booking = () => {
-    // const data = fakeData;
-    // console.log(data[0].img)
-    // const img = data[0].img
+    const {numId} = useParams()
+    const allNum = fakeData.find( fd => fd.id == numId);
+    const {title,detail} = allNum;
+    // console.log('booking',numId);
 
-    // const {numId} = useParams()
-    // const allNum = fakeData.map( fd => fd.id);
-    // console.log(allNum);
+    const history = useHistory();
+    const handleBooking = (numId) => {
+         history.push(`/booking/${numId}`);
+        console.log('booking is ok',numId)
+    }
+
     return (
-        <div>
-         <h1>this is destination</h1>
-         <Login></Login>
-        </div>
+        <section>
+           <div className='overlay'>
+           <Container className='main_container'>
+            <Row>
+       
+            <Col className='detail'><div className='blog'><span className='title'>{title}</span> <br/> {detail}</div></Col>
+                <Col className="start_booking">
+                   <h1>rakib khah</h1>
+                   <Link to="roomBtn">
+                  <button className='bookingBtn'>Start Booking</button>
+                  </Link>
+                </Col>
+            </Row>
+            </Container>
+           </div>
+        </section> 
+        
     );
 };
 
