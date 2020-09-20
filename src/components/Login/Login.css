@@ -1,15 +1,42 @@
-.ship-form{
-    margin: 30px 100px;
+
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input_container{
+    border: 1px solid rgb(196, 218, 233);
+    padding: 20px;
 }
 
 .ship-form input{
     display: block;
-    margin-top:30px ;
-    padding: 5px;
-    border-radius: 5px ;
-    width: 300px;
+    margin-top:12px ;
+    width: 370px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(196, 218, 233, 0.918);
 
 }
+.submitBtn{
+    background-color: rgb(255, 136, 0);
+}
+
+
 .error{
     color: red;
+    font-size: 9px;
+}
+
+.loginBtn{
+    border-radius:20px;
+    border: 1px solid  rgba(196, 218, 233, 0.918);
+    outline: none !important;
+}
+.imgGoogleAndFb{
+    width:23px;
+    float: left;
 }

@@ -1,23 +1,30 @@
 
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword, handleFBSignIn, handleGoogleSingIn, initializeLoginFramework, signInWithEmailAndPassword } from './LoginManager.js';
+import {
+    createUserWithEmailAndPassword, 
+    handleFBSignIn, handleGoogleSingIn,
+    initializeLoginFramework, signInWithEmailAndPassword 
+  } from './LoginManager.js';
 import { useForm } from "react-hook-form";
-import './Login.css'
+import './Login.css';
+import fbIcon from "../images/travel-guru-master/Icon/fb.png";
+import googleIcon from '../images/travel-guru-master/Icon/google.png';
+
 const Login = () => {
-const [newUser,setNewUser] = useState(true);
-const [user,setUser] = useState({
-  isSignIn: false,
-  name: '',
-  email: '',
-  photo: '',
-  success:false
-  
-})
+    const [newUser,setNewUser] = useState(true);
+    const [user,setUser] = useState({
+      isSignIn: false,
+      name: '',
+      email: '',
+      photo: '',
+      success:false
+      
+    })
     initializeLoginFramework();
     // google SignIn------------
    const googleSingIn = () => {
     handleGoogleSingIn()
-    .then (res => {
+     .then (res => {
       handleResponse(res,true)
     })
   };
@@ -76,37 +83,29 @@ const [user,setUser] = useState({
        }
     }
     return (
-    <div>
-      <h1> this is login </h1>
-      {/* defaultValue= {loggedInUser.name}   defaultValue={loggedInUser.email} */}
-
-     <form className='ship-form' onSubmit={handleSubmit(onSubmit)}>
-      { newUser && <input name="name" onBlur={handleInputField}  ref={register({ required: true })} placeholder="Your name" />}
-      {errors.name && <span className="error">Name is required</span>}
-      <br/>
+    <div className="main">
+    <div className='input_container'>
+    {newUser ?' Create an account':'Login'}
+    <form className='ship-form' onSubmit={handleSubmit(onSubmit)}>
+      { newUser && <input name="name" onBlur={handleInputField}  ref={register({ required: true })} placeholder="first name" />}
+      {errors.name && <span className="error">first name is required</span>}
+      { newUser && <input name="name" onBlur={handleInputField}  ref={register({ required: true })} placeholder="last name" />}
+      {errors.name && <span className="error">last name is required</span>}
       <input name="email" onBlur={handleInputField} ref={register({ required: true })} placeholder="Your Email" />
       {errors.email && <span className="error">Email is required</span>}
-            <br/>
-      <input type='password' onBlur={handleInputField} name="password" ref={register({ required: true })} placeholder="Your password" />
+      <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="Your password" />
       {errors.password && <span className="error">password is required</span>}
-            <br/>
-      {/* <input name="phone" ref={register({ required: true })} placeholder="Your Phone Number" />
-      {errors.phone && <span className="error">Phone Number is required</span>} */}
-            {/* <br/> */}
-      <input type="submit" />
+      <input className='submitBtn' type="submit" value={newUser ? 'Create an account':'Login'} />
     </form>
-    <br/>
-
-    <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
-    <label htmlFor="newUser">Already have an account ?</label>
-    <br/>
-  <button onClick={googleSingIn} style={{color:'red'}}>Google sign in</button>
-<br/>
-   {/* <p>email:{user.isSignIn && user.name}</p> */}
-   <button onClick={fBSignIn}>Fb Sign In</button>
-  {/* <p>name:{user.name}</p> */}
-
+        <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
+        <label htmlFor="newUser">Already have an account ?</label>
     </div>
+    <br/>
+    <p style={{textAlign:'center'}}> <span style={{borderBottom:"1px solid red"}}></span> or  <span  style={{borderBottom:"1px solid red"}}></span> </p>
+    <button className='loginBtn' onClick={fBSignIn}><img className='imgGoogleAndFb' src={fbIcon} alt=""/>Continue with Facebook</button>
+    <br/>
+    <button  className='loginBtn' onClick={googleSingIn}> <img className='imgGoogleAndFb' src={googleIcon} alt=""/> Continue with Google</button>
+</div>
 
     );
 };
