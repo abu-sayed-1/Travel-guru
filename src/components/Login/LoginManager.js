@@ -36,17 +36,19 @@ export const handleFBSignIn = () =>{
     const fbProvider = new firebase.auth.FacebookAuthProvider();
    return firebase.auth().signInWithPopup(fbProvider)
      .then(function(result) {
-      console.log(result);
-      var token = result.credential.accessToken;
-      var user = result.user;
-      user.success = true;
-      return user;
-
+      // console.log(result);
+      const {displayName,email,photoURL} = result.user;
+    const signedInUser = {
+        isSignIn:true,
+        name:displayName,
+        email:email,
+        photo:photoURL,
+        success:true
+      }
+      return signedInUser;
     }).catch (error => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      var email = error.email;
-      var credential = error.credential;
+     console.log(error.message);
+     console.log( error.email);
     });
    };
 
