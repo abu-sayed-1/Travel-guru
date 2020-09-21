@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -11,9 +11,15 @@ import PageNotFound from './components/PageNotFound/PageNotFound';
 import Header from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Room from './components/Room/Room';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Login from './components/Login/Login';
+
+export const UserContext = createContext();
+
 function App() {
+  const [loggedInUser,setLoggedInUser] = useState({});
   return (
-    <div >
+    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
      <Router>
        <Header />
        <Switch>
@@ -26,15 +32,18 @@ function App() {
          <Route path="/detail/:numId/">
          <Booking />
          </Route>
-         <Route to="/roomBtn">
-          <Room />
+         <Route path="/login">
+           <Login />
          </Route>
+          <PrivateRoute path="/room">
+           <Room />
+          </PrivateRoute>
          <Route path="*">
            <PageNotFound />
          </Route>
        </Switch>
      </Router>
-    </div>
+    </UserContext.Provider>
   );
 }
 

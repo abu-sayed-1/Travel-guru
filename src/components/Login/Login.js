@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {
     createUserWithEmailAndPassword, 
     handleFBSignIn, handleGoogleSingIn,
@@ -9,9 +9,17 @@ import { useForm } from "react-hook-form";
 import './Login.css';
 import fbIcon from "../images/travel-guru-master/Icon/fb.png";
 import googleIcon from '../images/travel-guru-master/Icon/google.png';
+import { UserContext } from '../../App.js';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const Login = () => {
-    const [newUser,setNewUser] = useState(true);
+
+    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+    const history = useHistory();
+    const location = useLocation();
+    let {from} = location.state || { from: {pathname: "/" } };
+  
+  const [newUser,setNewUser] = useState(true);
     const [user,setUser] = useState({
       isSignIn: false,
       name: '',
@@ -41,8 +49,12 @@ const Login = () => {
     
   };
 
-  const handleResponse = (res) => {
-    setUser(res)
+  const handleResponse = (res,redirect) => {
+    setUser(res);
+    setLoggedInUser(res);
+    if (redirect) {
+      history.replace(from);
+     }
   }
 
 
@@ -87,10 +99,10 @@ const Login = () => {
     <div className='input_container'>
     {newUser ?' Create an account':'Login'}
     <form className='ship-form' onSubmit={handleSubmit(onSubmit)}>
-      { newUser && <input name="name" onBlur={handleInputField}  ref={register({ required: true })} placeholder="first name" />}
-      {errors.name && <span className="error">first name is required</span>}
-      { newUser && <input name="name" onBlur={handleInputField}  ref={register({ required: true })} placeholder="last name" />}
-      {errors.name && <span className="error">last name is required</span>}
+      { newUser && <input name="firstName" onBlur={handleInputField}  ref={register({ required: true })} placeholder="first name" />}
+      {errors.firstName && <span className="error">first name is required</span>}
+      { newUser && <input name="lastName" onBlur={handleInputField}  ref={register({ required: true })} placeholder="last name" />}
+      {errors.lastName && <span className="error">last name is required</span>}
       <input name="email" onBlur={handleInputField} ref={register({ required: true })} placeholder="Your Email" />
       {errors.email && <span className="error">Email is required</span>}
       <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="Your password" />
