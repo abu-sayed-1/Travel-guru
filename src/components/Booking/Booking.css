@@ -1,5 +1,9 @@
  
- 
+ body{
+     margin: 0;
+     padding: 0;
+ }
+
 .title {
      font-size: 35px;
     color: #f9fcff;
@@ -11,19 +15,22 @@
 }
 
 .start_booking{
-    height:420px;
-    margin-top: 20px;
+    width: 100px;
+    height: 422px;
+    margin-top: 35px;
+    margin-bottom: 20px;
     border-radius: 8px;
     background-color: white;
 }
+ 
 
 .bookingSubInput{
-    width: 448px;
+    width: 95%;
     border: none;
     outline: none;
     background-color:whitesmoke;
     line-height: 50px;
-    padding-left: 6px;
+    padding-left: 10px;
 }
 
 .submitFrom{

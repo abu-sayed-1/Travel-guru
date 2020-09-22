@@ -10,16 +10,17 @@ const Header = () => {
   return (
     // https://www.picmonkey.com/home/editor/CiRjOTgxYzA3MC00NTcwLTQ3N2UtODc1YS1iYTNkMmUyMTM5Yzc
     <>
-     <Navbar bg="light" variant="light">
-    <Navbar.Brand href="#home"><img src={brandIcon} alt=""/></Navbar.Brand>
-    <Form inline>
+     <Navbar style={{ backgroundColor:'rgba(255, 5, 8, 0.456789' }}>
+      <img src={brandIcon} alt=""/> 
+    <Form inline style={{marginLeft:'30px'}}>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-primary">Search</Button>
     </Form>
-    <Nav className="ml-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    <Nav className='navbar active' className="ml-auto">
+      <Nav.Link href="#home">Destination</Nav.Link>
+      <Nav.Link href="#features">Blog</Nav.Link>
+      <Nav.Link href="#pricing">Contact</Nav.Link>
+     <Nav.Link href="#home">Login</Nav.Link>
     </Nav>
 
   </Navbar>

@@ -8,8 +8,8 @@ section{
     /* overflow: hidden; */
     }
 .home_container{
-    width: 100%;
-    height: 417px;
+    /* width: 100%; */
+    height: 496px;
    
 }
 .homeContainer{
@@ -17,8 +17,7 @@ section{
 }
 
 .overlay {
-    width: 100%;
-    height: 100%; 
+    height: 100%;  
     background:rgba(7, 8, 8, 0.658)
 }
 
@@ -35,15 +34,16 @@ section{
 }
 .imageCard{
     border-top-left-radius: 80px;
-    height: 307px;
+    height: 100%;
 }
 
 .destinationBtn{
     position:absolute;
     bottom:35px;
     padding-left:12px;
-    color:rgba(153, 241, 11, 0.911) ;
+    color:rgba(153, 241, 11, 0.678) !important ;
     cursor: pointer;
+    /* background: inherit; */
     
 }
 .destination{

@@ -5,6 +5,7 @@
     align-items: center;
     /* margin-bottom: 20px; */
     margin-top: 20px;
+    /* background-color: cyan; */
 }
 
 .input_container{
@@ -22,6 +23,7 @@
 
 }
 .submitBtn{
+    line-height: 50px;
     background-color: rgb(255, 136, 0);
 }
 

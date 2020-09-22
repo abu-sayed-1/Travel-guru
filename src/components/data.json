@@ -1,29 +1,20 @@
 [{
   "id": 1,
-  "start": "19/23",
-  "and": "26/23",
   "title": "COX’S BAZAR",
   "detail2":"Cox's Bazar (Bengali: কক্সবাজার, pronounced [kɔksbadʒaɾ]) is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach,",
   "detail": "Cox's Bazar (Bengali: কক্সবাজার, pronounced [kɔksbadʒaɾ]) is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach, and it is infamous for the largest refugee camp in the world. It is located 150 km (93 mi) south of the divisional headquarter city of Chittagong. Cox's Bazar is also known by the name Panowa, which translates literally as yellow flower. Another old name was Palongkee.The modern Cox's Bazar derives its name from Captain Hiram Cox, an officer of the British East India Company, a Superintendent of Palongkee outpost. To commemorate his role in refugee rehabilitation work, a market was established and named after him.The municipality covers an area of 6.85 km2 (2.64 sq mi) with 27 mahallas and 9 wards and as of 2012 had a population of 51,918.",
   "img": "https://i.ibb.co/DbXRmV8/Rectangle-1.png",
-  "origin": "Seiurus aurocapillus",
   "destination": "Cox’s Bazar"
 }, {
   "id": 2,
-  "start": "15/20",
-  "and": "25/20",
   "title": "SREEMANGAL",
   "detail": " Madhobpur Lake is one of the main tourist attractions in the area,[3][4][5] and is home to the Great White-Bellied Heron, the only confirmed site in Bangladesh.[6] The Baikka beel is also a nearby body of water and home to the Large-billed reed warbler.[7] Sreemangal has been nicknamed the tea capital of Bangladesh, due to the number of tea gardens in the area, and is the place of origin of the Seven Color Tea.[2] The Bangladesh Tea Research Institute in Sreemangal has made a number of contributions in evolving and standardising the quality of tea, and introducing its research findings to the tea industry of Bangladesh.[8] Pineapples from the Sreemangal area are known for their flavour and natural sweetness.[citation needed] In 2010, the Hum Hum waterfall was discovered and has attracted visitors from all over Bangladesh to Razkandi forest. Sreemangal is located at 24.3083°N 91.7333°E. It has 43,952 households and total area 450.74 km². It is bordered by Moulvibazar Sadar to the north, Tripura to the south, Kamalganj to the east and Chunarughat, Nabiganj and Bahubal to the west.",
   "img": "https://i.ibb.co/JdJC0CN/Sreemongol.png",
-  "origin": "Echimys chrysurus",
   "destination": "Sreemangal"
 }, {
   "id": 3,
-  "start": "06/08",
-  "and": "13/08",
   "title": "SUNDARBAN",
   "detail": "The Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh. It comprises closed and open mangrove forests, agriculturally used land, mudflats and barren land, and is intersected by multiple tidal streams and channels. Four protected areas in the Sundarbans are enlisted as UNESCO World Heritage Sites, viz. Sundarbans National Park, Sundarbans West, Sundarbans South and Sundarbans East Wildlife Sanctuaries.[3] Despite these protections, the Indian Sundarbans were considered endangered in a 2020 assessment under the IUCN Red List of Ecosystems framework.[4]The Sundarbans mangrove forest covers an area of about 10,000 km2 (3,900 sq mi), of which forests in Bangladesh's Khulna Division extend over 6,017 km2 (2,323 sq mi) and in West Bengal, they extend over 4,260 km2 (1,640 sq mi) across the South 24 Parganas and North 24 Parganas districts.[5] The most abundant tree species are sundri (Heritiera fomes) and gewa (Excoecaria agallocha). The forests provide habitat to 453 faunal wildlife, including 290 bird, 120 fish, 42 mammal, 35 reptile and eight amphibian species.[6] ",
   "img": "https://i.ibb.co/YfsnQL2/sundorbon.png",
-  "origin": "Dakha",
   "destination": "Sundarban"
 }]

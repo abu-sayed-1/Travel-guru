@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
     width:'46%',
     marginLeft:'6px',
     backgroundColor:'whitesmoke'
+  },
+  dateInput:{
+    marginLeft:'20px'
   }
 }));
 
@@ -54,12 +57,11 @@ const Booking = () => {
     return (
         <section>
            <div className="overlay">  
-         <Container className='main_container'>
+         <Container>
             <Row>
-       
             <Col className='detail'><div><h1 className='destination'>{title}</h1> <br/> {detail}</div></Col>
                     <Col className="start_booking">
-                    <form className='bookingSub' onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <br/>
                       <h6 className="fromText">Origan</h6>
                      <input className="bookingSubInput" name="text"  ref={register({ required: true })} placeholder="Dhaka" />
@@ -85,7 +87,7 @@ const Booking = () => {
                               'aria-label': 'change date',
                             }}
                           />
-                          <KeyboardDatePicker className={classes.inputDatePicker}
+                          <KeyboardDatePicker className={classes.dateInput} className={classes.inputDatePicker}
                             margin="normal"
                             id="date-picker-dialog"
                             label="And"

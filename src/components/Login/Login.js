@@ -103,14 +103,14 @@ const Login = () => {
       {errors.firstName && <span className="error">first name is required</span>}
       { newUser && <input name="lastName" onBlur={handleInputField}  ref={register({ required: true })} placeholder="last name" />}
       {errors.lastName && <span className="error">last name is required</span>}
-      <input name="email" onBlur={handleInputField} ref={register({ required: true })} placeholder="Your Email" />
+      <input name="email" onBlur={handleInputField} ref={register({ required: true })} placeholder="Username or Email" />
       {errors.email && <span className="error">Email is required</span>}
-      <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="Your password" />
+      <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="password" />
       {errors.password && <span className="error">password is required</span>}
       <input className='submitBtn' type="submit" value={newUser ? 'Create an account':'Login'} />
     </form>
         <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
-        <label htmlFor="newUser">Already have an account ?</label>
+        <label htmlFor="newUser">  { newUser ? "Already have an account ?":"Don't have an account ? Create an account"}</label>
     </div>
     <br/>
     <p style={{textAlign:'center'}}> <span style={{borderBottom:"1px solid red"}}></span> or  <span  style={{borderBottom:"1px solid red"}}></span> </p>

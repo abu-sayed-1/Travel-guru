@@ -11,7 +11,7 @@ import PageNotFound from './components/PageNotFound/PageNotFound';
 import Header from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Room from './components/Room/Room';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+// import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 
 export const UserContext = createContext();
@@ -35,9 +35,12 @@ function App() {
          <Route path="/login">
            <Login />
          </Route>
-          <PrivateRoute path="/room">
+          {/* <PrivateRoute path="/room">
            <Room />
-          </PrivateRoute>
+          </PrivateRoute> */}
+          <Route path='/room'>
+             <Room></Room>
+          </Route>
          <Route path="*">
            <PageNotFound />
          </Route>
