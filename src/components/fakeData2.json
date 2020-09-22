@@ -1,37 +1,100 @@
 [{
     "id": 1,
     "roomDetail": "Light bright airy styliish apt & safe peaceful stays",
-    "roomInfo": "4 guests  2 bedrooms  2 beds 2 baths",
+    "roomInfo": "4 guests  3 bedrooms  2 beds 2 baths",
     "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
     "rating": "4.9 (20)",
     "price": "$89",
-    "totalPrice": "/Night $160 total",
+    "totalPrice": "/Night $140 total",
+    "star":"https://i.ibb.co/b1Nq76K/star-1.png",
     "roomImg1": "https://i.ibb.co/3F3fXRF/Rectangle-26.png",
-    "roomImg2": "https://i.ibb.co/jRrhY9J/Rectangle-27.png",
-    "roomImg3": "https://tse3.mm.bing.net/th?id=OIP.HnmcvgV7ixRjDKDABU0mMgHaEe&pid=Api&P=0&w=281&h=171",
     "currentLocation": "COX’S BAZAR"
-  }, {
-    "id": 2,
-    "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum voluptate sunt tempore. Consequatur dolor aspernatur eius nostrum officia vero esse corporis unde nulla",
-    "roomInfo": "3 guests  2 bedrooms  2 beds 2 baths",
+  },{
+    "id": 1,
+    "roomDetail": "Light bright airy styliish apt & safe peaceful stays",
+    "roomInfo": "4 guests  2 bedrooms  1 beds 2 baths",
     "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
-    "rating": "6.9 (30)",
-    "price": "$90",
+    "rating": "5.2 (12)",
+    "price": "$70",
+    "totalPrice": "/Night $90 total",
+    "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+    "roomImg1": "https://i.ibb.co/jRrhY9J/Rectangle-27.png",
+    "currentLocation": "COX’S BAZAR"
+  },{
+    "id": 1,
+    "roomDetail": "Light bright airy styliish apt & safe peaceful stays",
+    "roomInfo": "4 guests  2 bedrooms  2 beds 2 baths",
+    "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
+    "rating": "3.9 (18)",
+    "price": "$99",
     "totalPrice": "/Night $120 total",
-    "roomImg1": "https://tse2.mm.bing.net/th?id=OIP._xUfhKxR7WTa-Ujpe-fCgQHaHI&pid=Api&P=0&w=167&h=161",
-    "roomImg2": "https://cdn.decoist.com/wp-content/uploads/2012/08/travel-inspired-bedroom-with-fancy-home-office.jpg",
-    "roomImg3": "https://tse2.mm.bing.net/th?id=OIP.H-TBmZx1GdXb3c9FhEJc2wHaDt&pid=Api&P=0&w=347&h=174",
-    "currentLocation": "SREEMANGAL"
-  }, {
-    "id": 3,
-    "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum voluptate sunt tempore. Consequatur dolor aspernatur eius nostrum officia vero esse corporis unde nulla",
-    "roomInfo": "5 guests  2 bedrooms  2 beds 2 baths",
-    "convenience": "Wif air conditiontng Kitchen Cancellation ",
-    "rating": "8.9 (40)",
-    "price": "$100",
-    "totalPrice": "/Night $180 total",
-    "roomImg1": "https://i.pinimg.com/originals/09/e0/9d/09e09d3a8fe8bd53c71f83bc52acd2fa.jpg",
-    "roomImg2": "https://tse1.mm.bing.net/th?id=OIP.nWSxrcpCFxB0_F-iDH_MyAHaEo&pid=Api&P=0&w=264&h=166",
-    "roomImg3": "https://tse2.mm.bing.net/th?id=OIP.YI3rUP-2lExM5mlpqfn3gAAAAA&pid=Api&P=0&w=235&h=166",
-    "currentLocation": "SUNDARBAN"
-  }]
+    "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+    "roomImg1": "https://tse3.mm.bing.net/th?id=OIP.HnmcvgV7ixRjDKDABU0mMgHaEe&pid=Api&P=0&w=281&h=171",
+    "currentLocation": "COX’S BAZAR"
+  },{
+        "id": 2,
+        "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum voluptate sun",
+        "roomInfo": "3 guests  2 bedrooms  2 beds 2 baths",
+        "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
+        "rating": "10.9 (11)",
+        "price": "$100",
+        "totalPrice": "/Night $128 total",
+        "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+        "roomImg1": "https://tse2.mm.bing.net/th?id=OIP._xUfhKxR7WTa-Ujpe-fCgQHaHI&pid=Api&P=0&w=167&h=161",
+        "currentLocation": "SREEMANGAL"
+      },{
+        "id": 2,
+        "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+        "roomInfo": "4 guests  2 bedrooms  2 beds 2 baths",
+        "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
+        "rating": "6.9 (16)",
+        "price": "$108",
+        "totalPrice": "/Night $1187 total",
+        "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+        "roomImg1": "https://cdn.decoist.com/wp-content/uploads/2012/08/travel-inspired-bedroom-with-fancy-home-office.jpg",
+        "currentLocation": "SREEMANGAL"
+      },{
+        "id": 2,
+        "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "roomInfo": "2 guests  1 bedrooms  2 beds 2 baths",
+        "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
+        "rating": "15.9 (30)",
+        "price": "$150",
+        "totalPrice": "/Night $200 total",
+        "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+        "roomImg1": "https://tse2.mm.bing.net/th?id=OIP.H-TBmZx1GdXb3c9FhEJc2wHaDt&pid=Api&P=0&w=347&h=174",
+        "currentLocation": "SREEMANGAL"
+      }, {
+            "id": 3,
+            "roomDetail": "Lorem ipsum dolor sit amet consectetu.",
+            "roomInfo": " guests  2 bedrooms  2 beds 2 baths",
+            "convenience": "Wif air conditiontng Kitchen Cancellation ",
+            "rating": "9.10 (5)",
+            "price": "$200",
+            "totalPrice": "/Night $123 total",
+            "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+            "roomImg1": "https://tse1.explicit.bing.net/th?id=OIP.PphJl3rrepWLAHVZ0ohQLwHaFj&pid=Api&P=0&w=214&h=161",
+            "currentLocation": "SUNDARBAN"
+          },{
+            "id": 3,
+            "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "roomInfo": " guests 4 bedrooms  2 beds 2 baths",
+            "convenience": "Wif air conditiontng Kitchen Cancellation ",
+            "rating": "10.9 (40)",
+            "price": "$79",
+            "totalPrice": "/Night $102 total",
+            "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+            "roomImg1": "https://tse1.mm.bing.net/th?id=OIP.nWSxrcpCFxB0_F-iDH_MyAHaEo&pid=Api&P=0&w=264&h=166",
+            "currentLocation": "SUNDARBAN"
+          },{
+            "id": 3,
+            "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. eius ",
+            "roomInfo": " guests 5 bedrooms 1 beds 3 baths",
+            "convenience": "Wif air conditiontng Kitchen Cancellation ",
+            "rating": "7.2 (9)",
+            "price": "$250",
+            "totalPrice": "/Night $300 total",
+            "star":"https://i.ibb.co/b1Nq76K/star-1.png",
+            "roomImg1": "https://tse2.mm.bing.net/th?id=OIP.YI3rUP-2lExM5mlpqfn3gAAAAA&pid=Api&P=0&w=235&h=166",
+            "currentLocation": "SUNDARBAN"
+          }]

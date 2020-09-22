@@ -1,0 +1,17 @@
+.room_container{
+    display: flex;
+}
+
+.RoomImg{
+    width:90%;
+    /* max-width:92% ; */
+    /* float:right; */
+    margin:10px;
+}
+.roomDetail{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.rooInfo{
+    color: darkgray;
+}

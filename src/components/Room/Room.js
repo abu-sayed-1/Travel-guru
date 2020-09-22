@@ -1,31 +1,29 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import fakeData from '../fakeData2.json'
+import fakeData1 from '../fakeData2.json';
+import fakeData from "../data.json";
 import rating from "../images/travel-guru-master/Icon/star_1_.png"
+import RoomInfo from './RoomInfo';
+import { id } from 'date-fns/esm/locale';
 
 const Room = () => {
-     const
+    const roomId = fakeData1.filter( fd => fd.id == fakeData[2].id);
     return (
-        <Container>
-            <Row>
-                <Col  xs={7}>
-                    <div  style={{display:"flex"}} >
-                    <div>
-                    <img  style={{width:'90%'}} src={fakeData[0].roomImg1} alt=""/>
-                    </div>
-                     <div>
-                      <p>{fakeData[0].roomDetail}</p>
-                     <p>{fakeData[0].roomInfo}</p>
-                     <p>{fakeData[0].convenience}</p>
-                    <p> <img  style={{width:"16px"}}  src={rating} alt=""/> {fakeData[0].rating}  <span>{fakeData[0].price}</span>  <span style={{color:'red'}}>{fakeData[0].totalPrice}</span></p>
-                     </div>
-                    </div>
-                </Col>
-                <Col>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum voluptate sunt tempore. Consequatur dolor aspernatur eius nostrum officia vero esse corporis unde nulla. Ipsum ab at hic voluptatem eveniet.</p>
-                </Col>
-            </Row>
-        </Container>
+      <>
+      <Container>
+          <Row>
+              <Col xs={7}>
+              {
+                roomId.map(pd => <RoomInfo roomElement={pd}></RoomInfo>)
+              }
+              </Col>
+              <Col>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet optio suscipit, atque perspiciatis hic ipsa amet odio excepturi libero fugit debitis. Id obcaecati quam placeat deserunt saepe quaerat, reiciendis debitis.</p>
+              </Col>
+          </Row>
+      </Container>
+     
+      </>
     );
 };
 

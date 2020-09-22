@@ -3,9 +3,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 20px; */
     margin-top: 20px;
-    /* background-color: cyan; */
+    margin-bottom:20px;
 }
 
 .input_container{

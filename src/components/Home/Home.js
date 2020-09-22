@@ -18,7 +18,7 @@ const Home = () => {
     const history = useHistory()
 
     const handleBooking = (numId) => {
-         history.push(`/detail/${numId}`) 
+         history.push(`/bookingDetail/${numId}`) 
     
     }
   return (
