@@ -57,16 +57,16 @@ const Booking = () => {
          <Container className='main_container'>
             <Row>
        
-            <Col className='detail'><div><span className='title'>{title}</span> <br/> {detail}</div></Col>
+            <Col className='detail'><div><h1 className='destination'>{title}</h1> <br/> {detail}</div></Col>
                     <Col className="start_booking">
                     <form className='bookingSub' onSubmit={handleSubmit(onSubmit)}>
                         <br/>
                       <h6 className="fromText">Origan</h6>
                      <input className="bookingSubInput" name="text"  ref={register({ required: true })} placeholder="Dhaka" />
-                     {errors.text && <span className="error">first name is required</span>}
+                     {errors.text && <span className="error">Origan is required</span>}
                      <h6 className="fromText">destination</h6>
                      <input className="bookingSubInput"  name="name" ref={register({ required: true })} placeholder="Cox's Bazar" />
-                     {errors.name && <span className="error">first name is required</span>}
+                     {errors.name && <span className="error">destination is required</span>}
                   <Row>
                   <Col className="fromText">From</Col>
                      <Col className="fromText">To</Col>

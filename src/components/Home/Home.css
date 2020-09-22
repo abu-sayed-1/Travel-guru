@@ -10,14 +10,48 @@ section{
 .home_container{
     width: 100%;
     height: 417px;
+   
+}
+.homeContainer{
+     margin-top: 8%;
 }
 
 .overlay {
-     /* position: absolute; */
-    /* top: 0;
-    left: 0; */
     width: 100%;
     height: 100%; 
     background:rgba(7, 8, 8, 0.658)
 }
- 
+
+.card_Item{
+    margin: 3px !important;
+    background-color: initial !important ;
+    border: none !important; 
+} 
+
+.imgCard{
+     width: 200px;
+     border-radius: 15px !important;
+     border: none;
+}
+.imageCard{
+    border-top-left-radius: 80px;
+    height: 307px;
+}
+
+.destinationBtn{
+    position:absolute;
+    bottom:35px;
+    padding-left:12px;
+    color:rgba(153, 241, 11, 0.911) ;
+    cursor: pointer;
+    
+}
+.destination{
+    font-weight: 600;
+    font-family: sans-serif;
+    color:white;
+}
+.descText{
+    color: rgba(196, 196, 189, 0.705) ;
+    margin-top: 55px;
+}
