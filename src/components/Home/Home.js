@@ -1,10 +1,9 @@
 import React from 'react';
 import fakeData from '../data.json' 
-// import HomeChild from './HomeChild';
 import './Home.css'
 import { useHistory } from 'react-router-dom';
-import { Container,Col, Row, CardGroup,Card} from 'react-bootstrap';
-import { Link } from '@material-ui/core';
+import { Container,Col, Row} from 'react-bootstrap';
+import HomeInfo from './HomeInfo';
 
 const Home = () => {
   const data = fakeData;
@@ -15,56 +14,30 @@ const Home = () => {
   //      history.push('/room')    
   //   };
 
-    const history = useHistory()
+    // const history = useHistory()
 
-    const handleBooking = (numId) => {
-         history.push(`/bookingDetail/${numId}`) 
+    // const handleBooking = (numId) => {
+    //      history.push(`/bookingDetail/${numId}`) 
     
-    }
+    // }
   return (
    <section className="home_container">
       <div className="overlay">
-            <Container>
-                  <Row>
-          <Col className='descText' xs={4}>
-            <h1 className='destination'>COX'S BAZAR</h1>
-            <small className='descText'>{fakeData[0].detail2}</small>
-          </Col>
-          <Col>
-          <CardGroup className="homeContainer">
-        <Card className='card_Item'>
-          <Card.Img className='imgCard imageCard' variant="top" src={data[0].img}/>
-          <Link  onClick={() => handleBooking(fakeData[0].id) } className="destinationBtn"
-            variant="body2"
-          >
-            COX'S BAZAR
-          </Link>
-        </Card>
-        <Card className='card_Item'>
-          <Card.Img className='imgCard' variant="top" src={data[1].img} />
-          <Link  onClick={() => handleBooking(fakeData[1].id) } className="destinationBtn"
-          variant="body2"
-          >
-            SREEMANGAL
-          </Link>
-        </Card>
-        <Card className='card_Item'  >
-          <Card.Img className='imgCard' variant="top" src= {data[2].img}/>
-          <Link onClick={() => handleBooking(fakeData[2].id) } className="destinationBtn"
-          variant="body2">
-            SUNDARBANS
-          </Link> 
-        </Card>
-      </CardGroup>
+      <Container>
+       <Row>
+        <Col className='blog' xs={4}>
+        <h1 className='destination'>Sajek</h1>
+        <small className='blog'>{fakeData[0].detail2}</small>
+        </Col>
+         <Col>
+         {
+           data.map( data => <HomeInfo destination={data}></HomeInfo>)
+         }
       </Col> 
-        </Row>
-        </Container>
-      {/* {
-
-        data.map(allData => <HomeChild allData={allData}></HomeChild>)
-      } */}
-      </div>
-  </section>
+     </Row>
+  </Container>
+ </div>
+</section>
   );
 };
 

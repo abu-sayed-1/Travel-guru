@@ -1,14 +1,10 @@
-.title {
-     font-size: 35px;
-    color: #f9fcff;
-}
 .detail{
     margin-top: 70px;
-    font-size: 10px;
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.726);
 }
 
-.start_booking{
+.booking_container{
     width: 100px;
     height: 422px;
     margin-top: 35px;
@@ -17,7 +13,7 @@
     background-color: white;
 }
  
-.bookingSubInput{
+.bookingInput{
     width: 95%;
     border: none;
     outline: none;

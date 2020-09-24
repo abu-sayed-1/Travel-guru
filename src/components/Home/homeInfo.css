@@ -1,0 +1,20 @@
+.homeInfo_Container{
+    margin-top: 8%;
+}
+.card_Item{
+    margin: 3px !important;
+    background-color: initial !important ;
+    border: none !important; 
+} 
+.imgCard{
+    width: 100%;
+    border-radius: 15px !important;
+    border: none;
+}
+.destinationBtn{
+    position:absolute;
+    bottom:35px;
+    padding-left:12px;
+    color:rgba(153, 241, 11, 0.678) !important ;
+    cursor: pointer;
+}
