@@ -4,6 +4,7 @@ import './Home.css'
 import { useHistory } from 'react-router-dom';
 import { Container,Col, Row} from 'react-bootstrap';
 import HomeInfo from './HomeInfo';
+import Room from '../Room/Room';
 
 const Home = () => {
   const data = fakeData;
@@ -31,11 +32,12 @@ const Home = () => {
         </Col>
          <Col>
          {
-           data.map( data => <HomeInfo destination={data}></HomeInfo>)
+           data.map( data => <HomeInfo key={data.id} destination={data}></HomeInfo>)
          }
       </Col> 
      </Row>
   </Container>
+  <Room></Room>
  </div>
 </section>
   );

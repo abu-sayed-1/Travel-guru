@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import fakeData from '../data.json';
 import './Booking.css';
@@ -13,6 +13,7 @@ import {
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
+import { BookingInfoContext} from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   inputDatePicker:{
@@ -38,8 +39,11 @@ const Booking = () => {
     };
 
     const {numId} = useParams()
+    const [booking,setBooking] = useContext(BookingInfoContext);
+    
     const checkId = fakeData.find( fd => fd.id == numId);
     const {title,detail} = checkId;
+    setBooking(checkId,'raju');
 
     const history = useHistory();
     const handleBooking = (numId) => {

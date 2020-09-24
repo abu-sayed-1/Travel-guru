@@ -2,18 +2,22 @@
         background-image: url('../images/travel-guru-master/Image/Rectangle 1.png');
         background-size: 100% 100%;
     }
+
     .home_container{
         height: 496px;
     }
+
     .overlay {
         height: 100%;  
         background:rgba(7, 8, 8, 0.658)
     }
+
     .destination{
         font-weight: 600;
         font-family: sans-serif;
         color:white;
     }
+    
     .blog{
         color: rgb(196, 196, 189) ;
         margin-top: 55px;

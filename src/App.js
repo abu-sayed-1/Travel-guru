@@ -10,17 +10,23 @@ import Booking from './components/Booking/Booking';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Header from './components/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Room from './components/Room/Room';
+// import Room from './components/Room/Room';
 // import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 // import GoogleMaps from './components/GoogleMaps/GoogleMaps';
 // import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 export const UserContext = createContext();
+export const BookingInfoContext = createContext();
 // 
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
+  const [booking,setBooking] = useState([])
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
+     <BookingInfoContext.Provider value={[booking,setBooking]}>
+       {
+         console.log(booking)
+       }
      <Router>
         <Header />
          <Switch>
@@ -39,9 +45,9 @@ function App() {
           {/* <PrivateRoute path="/room">
            <Room />
           // </PrivateRoute> */}
-          <Route path='/room'>
+          {/* <Route path='/room'>
              <Room></Room>
-          </Route>
+          </Route> */}
          <Route path="*">
            <PageNotFound />
          </Route>
@@ -49,6 +55,7 @@ function App() {
      </Router>
     <div>
     </div>
+    </BookingInfoContext.Provider>
     </UserContext.Provider>
   );
 }

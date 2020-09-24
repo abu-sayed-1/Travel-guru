@@ -1,43 +1,41 @@
 
-.main{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom:20px;
-}
+    .login_container{
+        display: grid;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
+    }
 
-.input_container{
-    border: 1px solid rgb(196, 218, 233);
-    padding: 20px;
-}
+    .input_container{
+        border: 1px solid rgb(196, 218, 233);
+        padding: 20px;
+    }
 
-.ship-form input{
-    display: block;
-    margin-top:12px ;
-    width: 370px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgba(196, 218, 233, 0.918);
+    .login_form input{
+        display: block;
+        margin-top:12px ;
+        width: 370px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(196, 218, 233, 0.918);
+    }
 
-}
-.submitBtn{
-    line-height: 50px;
-    background-color: rgb(255, 136, 0);
-}
+    .submitFormBtn{
+        line-height: 45px;
+        background-color: rgb(255, 136, 0);
+    }
 
+    .error{
+        color: red;
+        font-size: 9px;
+    }
 
-.error{
-    color: red;
-    font-size: 9px;
-}
+    .googleAndFbLoginBtn{
+        border-radius:20px;
+        border: 1px solid  rgba(196, 218, 233, 0.918);
+        outline: none !important;
+    }
 
-.loginBtn{
-    border-radius:20px;
-    border: 1px solid  rgba(196, 218, 233, 0.918);
-    outline: none !important;
-}
-.imgGoogleAndFb{
-    width:23px;
-    float: left;
-}
+    .imgGoogleAndFb{
+        width:23px;
+        float: left;
+    }

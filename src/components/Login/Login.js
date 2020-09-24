@@ -26,7 +26,6 @@ const Login = () => {
       email: '',
       photo: '',
       success:false
-      
     })
     initializeLoginFramework();
     // google SignIn------------
@@ -36,8 +35,6 @@ const Login = () => {
       handleResponse(res,true)
     })
   };
-
-
   // Fb SignIn --------------------
   const fBSignIn = () => {
     handleFBSignIn()
@@ -55,12 +52,9 @@ const Login = () => {
     if (redirect) {
       history.replace(from);
      }
-  }
-
-
-
+  }    
+ // handle Submit From--------------------------------------
     const { register, handleSubmit, watch, errors } = useForm();
-     // handle Submit From
     const onSubmit = () => {
       if (newUser && user.email && user.password) {
         createUserWithEmailAndPassword(user.name,user.email,user.password)
@@ -91,14 +85,13 @@ const Login = () => {
         const newUserInfo = {...user};
         newUserInfo[e.target.name] = e.target.value;
         setUser(newUserInfo);
-        
        }
     }
     return (
-    <div className="main">
+    <div className="login_container">
     <div className='input_container'>
     {newUser ?' Create an account':'Login'}
-    <form className='ship-form' onSubmit={handleSubmit(onSubmit)}>
+    <form className='login_form' onSubmit={handleSubmit(onSubmit)}>
       { newUser && <input name="firstName" onBlur={handleInputField}  ref={register({ required: true })} placeholder="first name" />}
       {errors.firstName && <span className="error">first name is required</span>}
       { newUser && <input name="lastName" onBlur={handleInputField}  ref={register({ required: true })} placeholder="last name" />}
@@ -107,16 +100,16 @@ const Login = () => {
       {errors.email && <span className="error">Email is required</span>}
       <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="password" />
       {errors.password && <span className="error">password is required</span>}
-      <input className='submitBtn' type="submit" value={newUser ? 'Create an account':'Login'} />
+      <input className='submitFormBtn' type="submit" value={newUser ? 'Create an account':'Login'} />
     </form>
         <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
         <label htmlFor="newUser">  { newUser ? "Already have an account ?":"Don't have an account ? Create an account"}</label>
     </div>
     <br/>
-    <p style={{textAlign:'center'}}> <span style={{borderBottom:"1px solid red"}}></span> or  <span  style={{borderBottom:"1px solid red"}}></span> </p>
-    <button className='loginBtn' onClick={fBSignIn}><img className='imgGoogleAndFb' src={fbIcon} alt=""/>Continue with Facebook</button>
+    <p style={{textAlign:'center'}}>or</p>
+    <button className='googleAndFbLoginBtn' onClick={fBSignIn}><img className='imgGoogleAndFb' src={fbIcon} alt=""/>Continue with Facebook</button>
     <br/>
-    <button  className='loginBtn' onClick={googleSingIn}> <img className='imgGoogleAndFb' src={googleIcon} alt=""/> Continue with Google</button>
+    <button  className='googleAndFbLoginBtn' onClick={googleSingIn}> <img className='imgGoogleAndFb' src={googleIcon} alt=""/> Continue with Google</button>
 </div>
 
     );
