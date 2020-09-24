@@ -13,16 +13,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Room from './components/Room/Room';
 // import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
-
+// import GoogleMaps from './components/GoogleMaps/GoogleMaps';
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 export const UserContext = createContext();
-
+// 
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
      <Router>
-       <Header />
-       <Switch>
+        <Header />
+         <Switch>
          <Route path="/home">
            <Home />
           </Route>
@@ -37,7 +38,7 @@ function App() {
          </Route>
           {/* <PrivateRoute path="/room">
            <Room />
-          </PrivateRoute> */}
+          // </PrivateRoute> */}
           <Route path='/room'>
              <Room></Room>
           </Route>
@@ -46,8 +47,42 @@ function App() {
          </Route>
        </Switch>
      </Router>
+    <div>
+    </div>
     </UserContext.Provider>
   );
 }
 
 export default App;
+ 
+
+// import React, { Component } from 'react';
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+//=> AIzaSyDzS9YcSBpjDqunij1wOfU_j9wExzDJYHA
+
+// class App extends Component{
+//   render(){
+//     return(
+//         <div>
+//     <Map google={this.props.google} zoom={4}>
+//           <Marker onClick={this.onMarkerClick}
+//                   name={'Bangladesh'} />
+//           <InfoWindow onClose={this.onInfoWindowClose}>
+//               <div>
+//                 {/* <h1>{this.state.selectedPlace.name}</h1> */}
+//           </div>
+//        </InfoWindow>
+//    </Map>
+//         </div>
+//     );
+
+//   }
+  
+// };
+
+// export default GoogleApiWrapper({
+//   apiKey: ("AIzaSyDzS9YcSBpjDqunij1wOfU_j9wExzDJYHA")
+// })(App)
+
+
+ 
