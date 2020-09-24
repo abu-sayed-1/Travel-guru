@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import fakeData1 from '../fakeData2.json';
-// import fakeData from "../data.json";
+import fakeData from "../data.json";
 import RoomInfo from './RoomInfo';
 import GoogleMaps from '../GoogleMaps/GoogleMaps';
-import { BookingInfoContext } from '../../App';
+// import { BookingInfoContext } from '../../App';
 
 const Room = () => {
-  const [booking,setBooking] = useContext(BookingInfoContext);
-  console.log(booking,'this is booking');
-    // const roomId = fakeData1.filter( fd => fd.id ==  booking.checkId.id);
+  // const [booking,setBooking] = useContext(BookingInfoContext);
+  // console.log(booking,'this is booking');
+    const roomId = fakeData1.filter( fd => fd.id ==  fakeData[0].id);
     return (
       <>
-   {/* <Container>
+   <Container>
     <Row>
       <Col style={{ minWidth:'60%',maxWidth:'62%'}} xs={6}>
                {
@@ -30,8 +30,7 @@ const Room = () => {
               />
           </Col>
         </Row>
-      </Container> */}
-      <p style={{color:'cyan'}}>this is Room Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium nobis nam harum nisi corrupti itaque optio. Accusantium, deserunt repellendus quas explicabo ducimus nulla facere earum, reiciendis, ipsum dolores cupiditate!</p>
+      </Container>
       </>
     );
 };

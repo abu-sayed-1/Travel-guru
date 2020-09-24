@@ -13,7 +13,7 @@ import {
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-import { BookingInfoContext} from '../../App';
+// import { BookingInfoContext} from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   inputDatePicker:{
@@ -27,8 +27,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Booking = () => {
-   const classes = useStyles();
-
+    const classes = useStyles();
     const [selectedDate, setSelectedDate] = useState(new Date('2020-09-21T21:11:54'));
     const handleDateChange = (date) => {
       setSelectedDate(date);
@@ -37,19 +36,19 @@ const Booking = () => {
     const handleDateAnd = (date) => {
       setSelectedAndDate(date);
     };
-
+// ------------------------------------
     const {numId} = useParams()
-    const [booking,setBooking] = useContext(BookingInfoContext);
+    // const [booking,setBooking] = useContext(BookingInfoContext);
     
     const checkId = fakeData.find( fd => fd.id == numId);
     const {title,detail} = checkId;
-    setBooking(checkId,'raju');
+    // setBooking(checkId,'booking component');
 
-    const history = useHistory();
-    const handleBooking = (numId) => {
-         history.push(`/booking/${numId}`);
-        console.log('booking is ok',numId)
-    };
+// handle booking-------------------------------
+     const history = useHistory()
+     const handlePrivateRoute = () => {
+        history.push('/room')    
+      };
 
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = () => {
@@ -101,7 +100,7 @@ const Booking = () => {
                           />
                         </Grid>
                       </MuiPickersUtilsProvider>
-                    <input className="submitFrom" type="submit" value="Booking"/>
+                    <input onClick={handlePrivateRoute} className="submitFrom" type="submit" value="Booking"/>
                     </form>
                 </Col>
             </Row>
