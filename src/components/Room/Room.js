@@ -34,7 +34,7 @@ import { BookingInfoContext } from '../../App';
           </Col>
         </Row>
       </Container>: <div className="container">
-           <h2 style={{color:'#ED5485',marginTop:'14%'}}>If you want to get the information on this page you have to go to the must home page and select the destination then you can get the information on this page</h2>
+           <h2 style={{color:'#ED5485',marginTop:'14%'}}>If you want to get the information on this page you have to go to the must home page and select the destination then you can get the information on this page....</h2>
         </div>}
       </>
     );
