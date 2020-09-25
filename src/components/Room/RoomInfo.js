@@ -7,7 +7,7 @@ const RoomInfo = (props) => {
         roomDetail,roomInfo,
         convenience,star,rating,price,
         totalPrice,roomImg1
-    } = props.roomElement;
+    } = props.roomInfo;
     return (
 
       <div className="roomInfo_container">

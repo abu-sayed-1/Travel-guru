@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import {
     createUserWithEmailAndPassword, 
     handleFBSignIn, handleGoogleSingIn,
-    initializeLoginFramework, signInWithEmailAndPassword 
+    initializeLoginFramework, resetPassword, signInWithEmailAndPassword 
   } from './LoginManager.js';
 import { useForm } from "react-hook-form";
 import './Login.css';
@@ -11,6 +11,7 @@ import fbIcon from "../images/travel-guru-master/Icon/fb.png";
 import googleIcon from '../images/travel-guru-master/Icon/google.png';
 import { UserContext } from '../../App.js';
 import { useHistory, useLocation } from 'react-router-dom';
+import { Link } from '@material-ui/core';
 
 const Login = () => {
 
@@ -19,6 +20,7 @@ const Login = () => {
     const location = useLocation();
     let {from} = location.state || { from: {pathname: "/" } };
   
+  const [checkInput,setCheckInput] = useState({})
   const [newUser,setNewUser] = useState(true);
     const [user,setUser] = useState({
       isSignIn: false,
@@ -73,6 +75,8 @@ const Login = () => {
     // handle Input Field----------------------
     const handleInputField = (e) => {
       let isFieldValid = true;
+      const inputVlue = isFieldValid;
+      setCheckInput(isFieldValid)
       if (e.target.name === 'email') {
         isFieldValid = /\S+@\S+\.\S+/.test(e.target.value); 
       }
@@ -87,6 +91,16 @@ const Login = () => {
         setUser(newUserInfo);
        }
     }
+    // const inputError = (isFieldValid) => {
+    //   if (isFieldValid === true) {
+    //     console.log(' true bro');
+    //   }
+    //   else if (isFieldValid !== true) {
+    //     console.log('not true')
+        
+    //   }
+    // };
+    // const sum = inputError();
     return (
     <div className="login_container">
     <div className='input_container'>
@@ -99,13 +113,18 @@ const Login = () => {
       <input name="email" onBlur={handleInputField} ref={register({ required: true })} placeholder="Username or Email" />
       {errors.email && <span className="error">Email is required</span>}
       <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="password" />
+      <p>{checkInput ? 'rakib' :'is not a valid '}</p>
       {errors.password && <span className="error">password is required</span>}
       <input className='submitFormBtn' type="submit" value={newUser ? 'Create an account':'Login'} />
     </form>
-        <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
-        <label htmlFor="newUser">  { newUser ? "Already have an account ?":"Don't have an account ? Create an account"}</label>
+        <label htmlFor="newUser">  { newUser ? "Already have an account ?":"Don't have an account ?"}</label>
+        <Link onClick={() => setNewUser(!newUser)} style={{cursor:'pointer'}}>{newUser ? ' Login' :' Create an account'}</Link>
+        <br/>
+       <Link  onClick={() => resetPassword(user.email)} style={{cursor:'pointer'}}>{ newUser ? " " :'Forgat password'}</Link>
+
     </div>
     <br/>
+    {/* <p>{inputVlue ? 'rakib':' '}</p> */}
     <p style={{textAlign:'center'}}>or</p>
     <button className='googleAndFbLoginBtn' onClick={fBSignIn}><img className='imgGoogleAndFb' src={fbIcon} alt=""/>Continue with Facebook</button>
     <br/>

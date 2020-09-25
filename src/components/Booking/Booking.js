@@ -13,7 +13,7 @@ import {
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-// import { BookingInfoContext} from '../../App';
+import { BookingInfoContext} from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   inputDatePicker:{
@@ -38,53 +38,52 @@ const Booking = () => {
     };
 // ------------------------------------
     const {numId} = useParams()
-    // const [booking,setBooking] = useContext(BookingInfoContext);
+    const [booking,setBooking] = useContext(BookingInfoContext);
     
     const checkId = fakeData.find( fd => fd.id == numId);
     const {title,detail} = checkId;
-    // setBooking(checkId,'booking component');
+    setBooking(checkId,'booking component');
 
 // handle booking-------------------------------
-     const history = useHistory()
-     const handlePrivateRoute = () => {
-        history.push('/room')    
-      };
-
+    const history = useHistory()
     const { register, handleSubmit, watch, errors } = useForm();
-    const onSubmit = () => {
-        console.log('booking submitted');
+    const handleBooking = () => {
+        history.push('/room')  
     }
     return (
         <section>
            <div className="overlay">  
          <Container>
             <Row>
+        
             <Col className='detail'><div><h1 className='destination'>{title}</h1> <br/> {detail}</div></Col>
                     <Col className="booking_container">
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(handleBooking)}>
                       <br/>
                       <h6 className="fromText">Origan</h6>
                      <input className="bookingInput" name="text"  ref={register({ required: true })} placeholder="Dhaka" />
                      {errors.text && <span className="error">Origan is required</span>}
                      <h6 className="fromText">destination</h6>
-                     <input className="bookingInput"  name="name" ref={register({ required: true })} placeholder="Cox's Bazar" />
+                     <input className="bookingInput"  name="name" ref={register({ required: true })} placeholder="SUNDARBAN" />
                      {errors.name && <span className="error">destination is required</span>}
+                     
                   <Row>
                   <Col className="fromText">From</Col>
-                     <Col className="fromText">To</Col>
+                    <Col className="fromText">To</Col>
                   </Row>
                     <MuiPickersUtilsProvider className={classes.datePicker} utils={DateFnsUtils}>
                         <Grid >
-                          <KeyboardDatePicker  className={classes.inputDatePicker} 
+                          <KeyboardDatePicker name="date" ref={register({ required: true })} className={classes.inputDatePicker} 
                             disableToolbar
                             variant="inline"
                             format="MM/dd"
                             margin="normal"
-                            label="Start"
+                            label={errors.date && <span className="error">destination is required</span>}
                             value={selectedDate}
                             onChange={handleDateChange}
                             KeyboardButtonProps={{
                               'aria-label': 'change date',
+                              
                             }}
                           />
                           <KeyboardDatePicker className={classes.dateInput} className={classes.inputDatePicker}
@@ -100,7 +99,7 @@ const Booking = () => {
                           />
                         </Grid>
                       </MuiPickersUtilsProvider>
-                    <input onClick={handlePrivateRoute} className="submitFrom" type="submit" value="Booking"/>
+                    <input className="submitFrom" type="submit" value="Booking"/>
                     </form>
                 </Col>
             </Row>

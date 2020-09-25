@@ -15,17 +15,17 @@ import Login from './components/Login/Login';
 import Room from './components/Room/Room';
 
 export const UserContext = createContext();
-// export const BookingInfoContext = createContext();
+export const BookingInfoContext = createContext();
 
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
-  // const [booking,setBooking] = useState([])
+  const [booking,setBooking] = useState({})
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-     {/* <BookingInfoContext.Provider value={[booking,setBooking]}> */}
-       {/* {
+     <BookingInfoContext.Provider value={[booking,setBooking]}>
+       {
          console.log(booking)
-       } */}
+       }
      <Router>
         <Header />
          <Switch>
@@ -44,9 +44,9 @@ function App() {
           <PrivateRoute path="/room">
            <Room />
            </PrivateRoute>
-          {/* <Route path='/room'>
+          {/* <PrivateRoute path='/room'>
              <Room /> 
-          </Route> */}
+          </PrivateRoute> */}
          <Route path="*">
            <PageNotFound />
          </Route>
@@ -54,7 +54,7 @@ function App() {
      </Router>
     <div>
     </div>
-    {/* </BookingInfoContext.Provider> */}
+    </BookingInfoContext.Provider>
     </UserContext.Provider>
   );
 }
