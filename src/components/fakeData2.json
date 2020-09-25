@@ -1,5 +1,6 @@
 [{
     "id": 1,
+    "currentLocation": "Sajek",
     "roomDetail": "Light bright airy styliish apt & safe peaceful stays",
     "roomInfo": "4 guests  3 bedrooms  2 beds 2 baths",
     "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
@@ -7,8 +8,7 @@
     "price": "$89",
     "totalPrice": "/Night $140 total",
     "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-    "roomImg1": "https://i.ibb.co/3F3fXRF/Rectangle-26.png",
-    "currentLocation": "COX’S BAZAR"
+    "roomImg1": "https://i.ibb.co/3F3fXRF/Rectangle-26.png"
   },{
     "id": 1,
     "roomDetail": "Light bright airy styliish apt & safe peaceful stays",
@@ -18,8 +18,7 @@
     "price": "$70",
     "totalPrice": "/Night $90 total",
     "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-    "roomImg1": "https://i.ibb.co/jRrhY9J/Rectangle-27.png",
-    "currentLocation": "COX’S BAZAR"
+    "roomImg1": "https://i.ibb.co/jRrhY9J/Rectangle-27.png"
   },{
     "id": 1,
     "roomDetail": "Light bright airy styliish apt & safe peaceful stays",
@@ -29,10 +28,10 @@
     "price": "$99",
     "totalPrice": "/Night $120 total",
     "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-    "roomImg1": "https://tse3.mm.bing.net/th?id=OIP.HnmcvgV7ixRjDKDABU0mMgHaEe&pid=Api&P=0&w=281&h=171",
-    "currentLocation": "COX’S BAZAR"
+    "roomImg1": "https://tse3.mm.bing.net/th?id=OIP.HnmcvgV7ixRjDKDABU0mMgHaEe&pid=Api&P=0&w=281&h=171"
   },{
         "id": 2,
+        "currentLocation": "SREEMANGAL",
         "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum voluptate sun",
         "roomInfo": "3 guests  2 bedrooms  2 beds 2 baths",
         "convenience": "Wif air conditiontng Kitchen Cancellation fexibilith",
@@ -40,8 +39,7 @@
         "price": "$100",
         "totalPrice": "/Night $128 total",
         "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-        "roomImg1": "https://tse2.mm.bing.net/th?id=OIP._xUfhKxR7WTa-Ujpe-fCgQHaHI&pid=Api&P=0&w=167&h=161",
-        "currentLocation": "SREEMANGAL"
+        "roomImg1": "https://tse2.mm.bing.net/th?id=OIP._xUfhKxR7WTa-Ujpe-fCgQHaHI&pid=Api&P=0&w=167&h=161"
       },{
         "id": 2,
         "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -51,8 +49,7 @@
         "price": "$108",
         "totalPrice": "/Night $1187 total",
         "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-        "roomImg1": "https://cdn.decoist.com/wp-content/uploads/2012/08/travel-inspired-bedroom-with-fancy-home-office.jpg",
-        "currentLocation": "SREEMANGAL"
+        "roomImg1": "https://cdn.decoist.com/wp-content/uploads/2012/08/travel-inspired-bedroom-with-fancy-home-office.jpg"
       },{
         "id": 2,
         "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -62,10 +59,10 @@
         "price": "$150",
         "totalPrice": "/Night $200 total",
         "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-        "roomImg1": "https://tse2.mm.bing.net/th?id=OIP.H-TBmZx1GdXb3c9FhEJc2wHaDt&pid=Api&P=0&w=347&h=174",
-        "currentLocation": "SREEMANGAL"
+        "roomImg1": "https://tse2.mm.bing.net/th?id=OIP.H-TBmZx1GdXb3c9FhEJc2wHaDt&pid=Api&P=0&w=347&h=174"
       }, {
             "id": 3,
+            "currentLocation": "SUNDARBAN",
             "roomDetail": "Lorem ipsum dolor sit amet consectetu.",
             "roomInfo": " guests  2 bedrooms  2 beds 2 baths",
             "convenience": "Wif air conditiontng Kitchen Cancellation ",
@@ -73,8 +70,7 @@
             "price": "$200",
             "totalPrice": "/Night $123 total",
             "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-            "roomImg1": "https://tse1.explicit.bing.net/th?id=OIP.PphJl3rrepWLAHVZ0ohQLwHaFj&pid=Api&P=0&w=214&h=161",
-            "currentLocation": "SUNDARBAN"
+            "roomImg1": "https://tse1.explicit.bing.net/th?id=OIP.PphJl3rrepWLAHVZ0ohQLwHaFj&pid=Api&P=0&w=214&h=161"
           },{
             "id": 3,
             "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -84,8 +80,7 @@
             "price": "$79",
             "totalPrice": "/Night $102 total",
             "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-            "roomImg1": "https://tse1.mm.bing.net/th?id=OIP.nWSxrcpCFxB0_F-iDH_MyAHaEo&pid=Api&P=0&w=264&h=166",
-            "currentLocation": "SUNDARBAN"
+            "roomImg1": "https://tse1.mm.bing.net/th?id=OIP.nWSxrcpCFxB0_F-iDH_MyAHaEo&pid=Api&P=0&w=264&h=166"
           },{
             "id": 3,
             "roomDetail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. eius ",
@@ -95,6 +90,5 @@
             "price": "$250",
             "totalPrice": "/Night $300 total",
             "star":"https://i.ibb.co/b1Nq76K/star-1.png",
-            "roomImg1": "https://tse2.mm.bing.net/th?id=OIP.YI3rUP-2lExM5mlpqfn3gAAAAA&pid=Api&P=0&w=235&h=166",
-            "currentLocation": "SUNDARBAN"
+            "roomImg1": "https://tse2.mm.bing.net/th?id=OIP.YI3rUP-2lExM5mlpqfn3gAAAAA&pid=Api&P=0&w=235&h=166"
           }]

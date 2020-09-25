@@ -6,10 +6,11 @@ const RoomInfo = (props) => {
     const {
         roomDetail,roomInfo,
         convenience,star,rating,price,
-        totalPrice,roomImg1
+        totalPrice,roomImg1,currentLocation
     } = props.roomInfo;
     return (
-
+    <> 
+      <br/>
       <div className="roomInfo_container">
       <div>
      <img className="RoomImg" src={roomImg1} alt=""/>
@@ -26,7 +27,8 @@ const RoomInfo = (props) => {
          </p>
          </ul>
        </div>
-      </div>            
+      </div>
+    </>            
      );
   };
 

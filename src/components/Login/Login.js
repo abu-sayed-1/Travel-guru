@@ -75,7 +75,7 @@ const Login = () => {
     // handle Input Field----------------------
     const handleInputField = (e) => {
       let isFieldValid = true;
-      const inputVlue = isFieldValid;
+      // const inputVlue = isFieldValid;
       setCheckInput(isFieldValid)
       if (e.target.name === 'email') {
         isFieldValid = /\S+@\S+\.\S+/.test(e.target.value); 
@@ -113,7 +113,7 @@ const Login = () => {
       <input name="email" onBlur={handleInputField} ref={register({ required: true })} placeholder="Username or Email" />
       {errors.email && <span className="error">Email is required</span>}
       <input name="password" type='password' onBlur={handleInputField} ref={register({ required: true })} placeholder="password" />
-      <p>{checkInput ? 'rakib' :'is not a valid '}</p>
+      {/* <p>{checkInput ? 'rakib' :'is not a valid '}</p> */}
       {errors.password && <span className="error">password is required</span>}
       <input className='submitFormBtn' type="submit" value={newUser ? 'Create an account':'Login'} />
     </form>

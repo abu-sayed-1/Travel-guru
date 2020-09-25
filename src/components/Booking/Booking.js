@@ -78,7 +78,7 @@ const Booking = () => {
                             variant="inline"
                             format="MM/dd"
                             margin="normal"
-                            label={errors.date && <span className="error">destination is required</span>}
+                            label="Start"
                             value={selectedDate}
                             onChange={handleDateChange}
                             KeyboardButtonProps={{

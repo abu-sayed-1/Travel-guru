@@ -13,6 +13,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 import Room from './components/Room/Room';
+import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
 
 export const UserContext = createContext();
 export const BookingInfoContext = createContext();
@@ -23,39 +25,37 @@ function App() {
   return (
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
      <BookingInfoContext.Provider value={[booking,setBooking]}>
-       {
-         console.log(booking)
-       }
      <Router>
         <Header />
          <Switch>
-         <Route path="/home">
-           <Home />
-          </Route>
-          <Route exact path="/">
-          <Home />
-         </Route>
-         <Route path="/bookingDetail/:numId/">
-         <Booking />
-         </Route>
-         <Route path="/login">
-           <Login />
-         </Route>
-          <PrivateRoute path="/room">
-           <Room />
-           </PrivateRoute>
-          {/* <PrivateRoute path='/room'>
-             <Room /> 
-          </PrivateRoute> */}
-         <Route path="*">
+          <Route path="/home">
+            <Home />
+            </Route>
+            <Route exact path="/">
+            <Home />
+           </Route>
+           <Route path="/blog">
+            <Blog />
+           </Route>
+           <Route path="/contact">
+             <Contact />
+           </Route>
+            <Route path="/bookingDetail/:numId/">
+            <Booking />
+            </Route>
+            <Route path="/login">
+            <Login />
+            </Route>
+            <PrivateRoute path="/room">
+            <Room />
+            </PrivateRoute>
+           <Route path="*">
            <PageNotFound />
          </Route>
        </Switch>
      </Router>
-    <div>
-    </div>
-    </BookingInfoContext.Provider>
-    </UserContext.Provider>
+  </BookingInfoContext.Provider>
+</UserContext.Provider>
   );
 }
 
