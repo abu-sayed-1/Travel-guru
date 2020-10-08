@@ -15,7 +15,8 @@ import { Link } from '@material-ui/core';
 
 const Login = () => {
 
-    const [loggedInUser,setLoggedInUser] = useContext(UserContext);
+    const {state1} = useContext(UserContext);
+    const [loggedInUser,setLoggedInUser] = state1;
     const history = useHistory();
     const location = useLocation();
     let {from} = location.state || { from: {pathname: "/" } };

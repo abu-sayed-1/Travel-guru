@@ -17,14 +17,11 @@ import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 
 export const UserContext = createContext();
-export const BookingInfoContext = createContext();
-
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({});
-  const [booking,setBooking] = useState({})
+  const [booking,setBooking] = useState({});
   return (
-    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
-     <BookingInfoContext.Provider value={[booking,setBooking]}>
+    <UserContext.Provider value={{state1:[loggedInUser,setLoggedInUser],state2:[booking,setBooking]}}>
      <Router>
         <Header />
          <Switch>
@@ -40,7 +37,7 @@ function App() {
            <Route path="/contact">
              <Contact />
            </Route>
-            <Route path="/bookingDetail/:numId/">
+            <Route path="/bookingDetail/:numId">
             <Booking />
             </Route>
             <Route path="/login">
@@ -54,7 +51,6 @@ function App() {
          </Route>
        </Switch>
      </Router>
-  </BookingInfoContext.Provider>
 </UserContext.Provider>
   );
 }

@@ -1,10 +1,15 @@
     section{
         background-image: url('../images/travel-guru-master/Image/Rectangle 1.png');
         background-size: 100% 100%;
+
+    }
+    .section{
+        height: auto;
     }
 
     .home_container{
-        height: 578px;
+        height: 989px;
+        /* min-height: 720px; */
     }
 
     .overlay {
@@ -20,5 +25,6 @@
     
     .blog{
         color: rgb(196, 196, 189) ;
-        margin-top: 55px;
+        margin-top: 139px;
+        font-size: 112%;
     }

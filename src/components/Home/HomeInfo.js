@@ -13,7 +13,7 @@ const HomeInfo = (props) => {
    return (
         <CardGroup   style={{display:'inline-block'}} className="homeInfo_Container">
         <Card className='card_Item'>
-          <Card.Img style={{width:"230px",}} className='imgCard' variant="top" src={img}/>
+          <Card.Img style={{width:"235px",}} className='imgCard' variant="top" src={img}/>
           <Link  onClick={() => handleDestination(id) } className="destinationBtn"
             variant="body2"
           >

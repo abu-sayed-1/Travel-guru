@@ -7,13 +7,13 @@
 
     .input_container{
         border: 1px solid rgb(196, 218, 233);
-        padding: 20px;
+        padding: 27px;
     }
 
     .login_form input{
         display: block;
         margin-top:12px ;
-        width: 370px;
+        width: 455px;
         border: none;
         outline: none;
         border-bottom: 1px solid rgba(196, 218, 233, 0.918);
@@ -31,11 +31,12 @@
 
     .googleAndFbLoginBtn{
         border-radius:20px;
+        height: 40px;
         border: 1px solid  rgba(196, 218, 233, 0.918);
         outline: none !important;
     }
 
     .imgGoogleAndFb{
-        width:23px;
+        width:30px;
         float: left;
     }

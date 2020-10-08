@@ -6,7 +6,7 @@ import HomeInfo from './HomeInfo';
 
 const Home = () => {
   const data = fakeData;
-  return (
+  return ( 
    <section className="home_container">
       <div className="overlay">
       <Container>

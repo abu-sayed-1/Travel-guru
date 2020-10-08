@@ -13,7 +13,7 @@ import {
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-import { BookingInfoContext} from '../../App';
+import { UserContext } from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   inputDatePicker:{
@@ -28,6 +28,21 @@ const useStyles = makeStyles((theme) => ({
 
 const Booking = () => {
     const classes = useStyles();
+    // ---handle useParams and fakeData-----------------------
+    const {numId} = useParams()
+    const {state2} = useContext(UserContext);
+    const [booking,setBooking] = state2;
+    const checkId = fakeData.find( data => data.id == numId);
+    const {title,detail} = checkId;
+    setBooking(checkId)
+    // handle booking-----------------------------------------
+    const history = useHistory()
+    const { register, handleSubmit, watch, errors } = useForm();
+    const handleBooking = () => {
+        history.push('/room')  
+    }
+
+    //  datePicker---------------------------------------------
     const [selectedDate, setSelectedDate] = useState(new Date('2020-09-21T21:11:54'));
     const handleDateChange = (date) => {
       setSelectedDate(date);
@@ -36,27 +51,13 @@ const Booking = () => {
     const handleDateAnd = (date) => {
       setSelectedAndDate(date);
     };
-// ------------------------------------
-    const {numId} = useParams()
-    const [booking,setBooking] = useContext(BookingInfoContext);
-    
-    const checkId = fakeData.find( fd => fd.id == numId);
-    const {title,detail} = checkId;
-    setBooking(checkId,'booking component');
 
-// handle booking-------------------------------
-    const history = useHistory()
-    const { register, handleSubmit, watch, errors } = useForm();
-    const handleBooking = () => {
-        history.push('/room')  
-    }
     return (
-        <section>
+        <section style={{height:' 700px'}}>
            <div className="overlay">  
          <Container>
             <Row>
-        
-            <Col className='detail'><div><h1 className='destination'>{title}</h1> <br/> {detail}</div></Col>
+            <Col className='detail'><div><h1 className='destination'>{title}</h1> <br/> <small style={{fontSize:'119%'}}>{detail}</small></div></Col>
                     <Col className="booking_container">
                     <form onSubmit={handleSubmit(handleBooking)}>
                       <br/>
@@ -73,7 +74,7 @@ const Booking = () => {
                   </Row>
                     <MuiPickersUtilsProvider className={classes.datePicker} utils={DateFnsUtils}>
                         <Grid >
-                          <KeyboardDatePicker name="date" ref={register({ required: true })} className={classes.inputDatePicker} 
+                          <KeyboardDatePicker className={classes.inputDatePicker} 
                             disableToolbar
                             variant="inline"
                             format="MM/dd"
